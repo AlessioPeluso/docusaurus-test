@@ -40,10 +40,10 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       (
         {
-        // gtag: {
-        //   trackingID: 'G-T7DZ6XFLM0',
-        //   anonymizeIP: true,
-        // },
+        gtag: {
+          trackingID: 'G-J71294VB58',
+          anonymizeIP: true,
+        },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
