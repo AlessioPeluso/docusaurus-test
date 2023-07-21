@@ -14,7 +14,7 @@ const config = {
   url: 'https://AlessioPeluso.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docusaurus-test',
+  baseUrl: '/docusaurus-test/',
 
   // deploymentBranch: 'main',
 
@@ -36,22 +36,27 @@ const config = {
 
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      (
+        {
+        // gtag: {
+        //   trackingID: 'G-T7DZ6XFLM0',
+        //   anonymizeIP: true,
+        // },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/AlessioPeluso/docusaurus-test/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/AlessioPeluso/docusaurus-test/tree//',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
